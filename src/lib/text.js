@@ -50,11 +50,25 @@ export const BoxText = styled.p`
   text-align: center;
   letter-spacing: 0;
   color: #000000;
-  margin: 58px 36px 56px 36px;
+  margin: 1.6em 1.3em 0em 1.3em;
   @media (min-width: 1024px) {
     font-size: 30px;
     text-align: left;
-    margin: 0px 150px;
+    margin: 0em 2.3em 0.5em 2.3em;
+    line-height: 1.2;
+  }
+`
+export const TechBoxText = styled.p`
+  font-family: 'Montserrat';
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 0;
+  color: #000000;
+  margin: 1.6em 1.3em 0em 1.3em;
+  @media (min-width: 1024px) {
+    font-size: 30px;
+    margin: 0em 2.3em 0.5em 2.3em;
+    line-height: 1.2;
   }
 `
 export const BoxHeader = styled.h3`
@@ -87,5 +101,16 @@ export const FeatureText = styled.p`
   margin: 0;
   @media (min-width: 1024px) {
     font-size: 25px;
+  }
+`
+export const TagText = styled.p`
+  font-family: 'Roboto';
+  font-size: 9px;
+  color: #2B2E34;
+  text-align: center;
+  margin: 0;
+  @media (min-width: 1024px) {
+    font-size: 16px;
+    text-align: left;
   }
 `

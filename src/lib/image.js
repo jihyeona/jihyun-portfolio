@@ -23,3 +23,50 @@ export const ProfileImage = styled.img`
     margin: 0 30px 0 0;
   }
 `
+
+export const FeatureImageWrap = styled.a`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-right: 5%;
+  margin-left: 5%;
+  @media (min-width: 1024px) {
+    width: 95%;
+    height: 300px;
+  }
+`
+export const FeatureImg = styled.img`
+  height: 400px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media (min-width: 1024px) {
+    height: 300px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+`
+
+export const FeatureImage = ({ href, alt, src }) => {
+  return (
+    <FeatureImageWrap href={href}>
+      <FeatureImg src={src} alt={alt} />
+    </FeatureImageWrap>
+  )
+}
+
+// background-image: url(${require(`../images/happyfeaturemobile.jpg`)});
+//   background-size: contain;
+//   background-position: center;
+//   background-repeat: no-repeat;
+
+//   background-image: url(${require(`../images/happyfeaturedesktop.png`)});
+//     background-size: contain;
+//     background-position: center;
+//     background-repeat: no-repeat;

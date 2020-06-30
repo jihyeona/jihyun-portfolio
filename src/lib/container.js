@@ -19,7 +19,6 @@ export const MainHeader = styled.header`
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    margin-bottom: 125px;
   }
 `
 
@@ -64,6 +63,40 @@ export const ProfileImageContainer = styled.div`
     display: flex;
   }
 `
+export const GreyPortfolioContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: fit-content;
+  width: 100%;
+  background-color: #F4F4F4;
+  padding-bottom: 20px;
+  @media (min-width: 1024px) {
+    max-width: -webkit-fill-available;
+    padding-top: 125px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+  }
+`
+export const WhitePortfolioContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: fit-content;
+  width: 100%;
+  background-color: #FFFFFF;
+  padding-bottom: 30px;
+  @media (min-width: 1024px) {
+    max-width: -webkit-fill-available;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+  }
+`
+
 export const RedHeaderBox = styled.div`
   background-color: #FA382F;
   margin-top: 50px;
@@ -72,4 +105,84 @@ export const RedHeaderBox = styled.div`
   align-items: center;
   min-width: min-content;
   min-height: min-content;
+  @media (min-width: 1024px) {
+    margin: 5em 0em;
+  }
 `
+export const FeatureDesktopBigBox = styled.div`
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+`
+export const FeatureContainer = styled.section`
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 668px) and (max-width: 1023px) {
+    width: 100%;
+  }
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    align-items: baseline;
+    width: 100%;
+  }
+`
+export const FeatureCard = styled.article`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
+`
+export const FeatureTextContainer = styled.div`
+  display: flex;
+  flex-wrap: row wrap;
+  margin: 5px 30px;
+  @media (min-width: 1024px) {
+    display: flex;
+    width: 95%;
+    flex-direction: row wrap;
+    margin-top: 10px;
+}
+`
+export const TagContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  margin: 10px 30px 20px 30px;
+  @media (min-width: 1024px) {
+    width: 100%;
+    margin: 10px 30px 20px 15px;
+}
+`
+export const TagBox = styled.div`
+  border: 1px solid #FDDFE7;
+  background-color: #FDDFE7;
+  margin-right: 4px;
+  padding: 2px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: min-content;
+  min-height: min-content;
+  @media (min-width: 1024px) {
+    margin-right: 6px;
+  }
+`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
