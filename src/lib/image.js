@@ -6,13 +6,17 @@ export const ProfileImage = styled.img`
   width: 162px;
   height: 162px;
   border-radius: 50%;
-  margin-top: 30%;
+  margin-top: 23%;
   margin-left: 40%;
   position: relative;
+  @media (min-width: 375px) and (max-width: 667px) {
+    margin-top: 30%;
+    margin-left: 50%;
+  }
   @media (min-width: 668px) and (max-width: 1023px) {
     width: 230px;
     height: 230px;
-    margin: 0px 30px;
+    margin: 0em 1em;
   } 
   @media (min-width: 1024px) {
     position: relative;
@@ -20,7 +24,7 @@ export const ProfileImage = styled.img`
     height: 250px;
     border: 2px solid white;
     border-radius: 50%;
-    margin: 0 30px 0 0;
+    margin: -3em 3em 3em 0em;
   }
 `
 

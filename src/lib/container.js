@@ -5,7 +5,7 @@ export const MainHeader = styled.header`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  max-height: 650px;
+  max-height: 38em;
   width: 100%;
   background-image: url(${require(`../images/IMG_0164.JPG`)});
   background-position: inherit;
@@ -23,8 +23,8 @@ export const MainHeader = styled.header`
 `
 
 export const IconHeader = styled.div`
-  padding-top: 185px;
-  padding-right: 10px;
+  padding-top: 9em;
+  padding-right: 1em;
   align-self: flex-end;
   display: flex;
   flex-direction: row;
@@ -38,8 +38,8 @@ export const HeaderTextContainer = styled.div`
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
-  padding-top: 10px;
-  padding-left: 41px;
+  padding-top: 0.2em;
+  padding-left: 1.2em;
   font-family: 'Montserrat';
   @media (min-width: 1024px) {
     display: flex;
@@ -161,7 +161,8 @@ export const FeatureCard = styled.article`
 export const FeatureTextContainer = styled.div`
   display: flex;
   flex-wrap: row wrap;
-  margin: 5px 30px;
+  width: 80%;
+  padding: 0.5em 1em;
   @media (min-width: 1024px) {
     display: flex;
     width: 95%;
@@ -182,7 +183,8 @@ export const TagContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-self: flex-start;
-  margin: 10px 30px 20px 30px;
+  width: 80%;
+  margin: 0.5em 1em 0em 1.5em;
   @media (min-width: 1024px) {
     width: 100%;
     margin: 10px 30px 20px 15px;
@@ -256,19 +258,29 @@ export const HideFeatureCard = styled.article`
 export const SkillsDesktopBigBox = styled.div`
   @media (min-width: 1024px) {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: baseline;
     width: 100%;
     padding: 0em 2em;
+  }
+`
+export const SkillsRowBox = styled.div`
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
   }
 `
 export const SkillsContainer = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 0.2em;
+  margin-top: 2em;
   margin-bottom: 0.2em;
+  @media (min-width: 768px) {
+    width: 50%;
+  }
 `
 export const SkillsList = styled.article`
   display: flex;
@@ -285,8 +297,8 @@ export const ColorIconContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 100%;
-  margin-left: 2em;
+  width: 95%;
+  margin-left: 3em;
   @media (max-width: 668px) {
     flex-direction: column;
     align-items: center;
