@@ -8,9 +8,10 @@ export const FeatureCardsTop = () => {
     <>
       <FeatureCard>
         <FeatureImage
-          href='https://heartpix.netlify.app/'
+          href='https://heartpix.netlify.app'
           alt='screenshot of feature project'
-          src={require(`../images/heartpix-desktop.png`)}
+          mobileUrl={require(`../images/heart-pix-mobile.png`)}
+          desktopUrl={require(`../images/heartpix-desktop.png`)}
         />
         <FeatureTextContainer>
           <FeatureRedTitle>HEART PIX.</FeatureRedTitle>
@@ -27,13 +28,10 @@ export const FeatureCardsTop = () => {
             <TagText>Node.js</TagText>
           </TagBox>
           <TagBox>
-            <TagText>Mongoose</TagText>
-          </TagBox>
-          <TagBox>
             <TagText>MongoDB</TagText>
           </TagBox>
           <TagBox>
-            <TagText>RESTful APIs</TagText>
+            <TagText>styled-components</TagText>
           </TagBox>
         </TagContainer>
       </FeatureCard>
@@ -41,11 +39,12 @@ export const FeatureCardsTop = () => {
         <FeatureImage
           href='https://trusting-shannon-7747f8.netlify.com'
           alt='screenshot of feature project'
-          src={require(`../images/happyfeaturedesktop.png`)}
+          mobileUrl={require(`../images/happyfeaturemobile.jpg`)}
+          desktopUrl={require(`../images/happyfeaturedesktop.png`)}
         />
         <FeatureTextContainer>
           <FeatureRedTitle>HAPPY THOUGHTS.</FeatureRedTitle>
-          <FeatureText>Twitter-like web SNS app to share happy thoughts</FeatureText>
+          <FeatureText>Web SNS app to send out happy thoughts</FeatureText>
         </FeatureTextContainer>
         <TagContainer>
           <TagBox>
@@ -59,6 +58,9 @@ export const FeatureCardsTop = () => {
           </TagBox>
           <TagBox>
             <TagText>MongoDB</TagText>
+          </TagBox>
+          <TagBox>
+            <TagText>Heroku</TagText>
           </TagBox>
         </TagContainer>
       </FeatureCard>

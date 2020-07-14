@@ -3,20 +3,33 @@ import { MainHeader, IconHeader, HeaderTextContainer, ProfileContainer, ProfileI
 import { Icon } from '../lib/icons'
 import { HeaderTitle, HeaderBigTitle, HeaderSubtext } from '../lib/text'
 import { ProfileImage } from '../lib/image'
+import '../App.css'
 
 export const Header = () => {
 
   return (
+
     <MainHeader>
       <IconHeader>
-        <Icon href='https://www.linkedin.com/in/jihyun-an-405431150/' src={require('../assets/linkedin-white-desktop.svg')} alt='linkedin' />
-        <Icon href='https://github.com/jihyeona' src={require('../assets/github-white-desktop.svg')} alt='github' />
-        <Icon href='https://stackoverflow.com/users/12668843/jihyeon' src={require('../assets/stack-white-desktop.svg')} alt='stackoverflow' />
+        <Icon href='https://www.linkedin.com/in/jihyun-an-405431150/'
+          alt='linkedin'
+          mobileUrl={require(`../assets/linkedin-white-mobile.svg`)}
+          desktopUrl={require(`../assets/linkedin-white-desktop.svg`)} />
+        <Icon href='https://github.com/jihyeona'
+          alt='github'
+          mobileUrl={require(`../assets/github-white-mobile.svg`)}
+          desktopUrl={require(`../assets/github-white-desktop.svg`)} />
+        <Icon href='https://stackoverflow.com/users/12668843/jihyeon'
+          alt='stackoverflow'
+          mobileUrl={require(`../assets/stack-white-mobile.svg`)}
+          desktopUrl={require(`../assets/stack-white-desktop.svg`)} />
       </IconHeader>
       <HeaderTextContainer>
+
         <HeaderTitle>PORTFOLIO: JIHYUN AN</HeaderTitle>
         <HeaderBigTitle>frontend</HeaderBigTitle>
         <HeaderBigTitle>developer</HeaderBigTitle>
+
         <ProfileContainer>
           <HeaderSubtext>+sustainable development</HeaderSubtext>
           <ProfileImageContainer>
@@ -25,6 +38,7 @@ export const Header = () => {
         </ProfileContainer>
       </HeaderTextContainer>
     </MainHeader>
+
   )
 }
 

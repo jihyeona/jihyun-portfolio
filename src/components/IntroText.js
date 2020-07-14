@@ -1,13 +1,13 @@
 import React from 'react'
-import { GreyPortfolioContainer } from '../lib/container'
-import { BoxText } from '../lib/text'
+import { GreyPortfolioContainer, MovingPortfolioContainer } from '../lib/container'
+import { FirstBoxText, BoxText } from '../lib/text'
 
 export const IntroText = () => {
   return (
-    <GreyPortfolioContainer>
-      <BoxText>
+    <MovingPortfolioContainer>
+      <FirstBoxText>
         Hello! <span role='img' aria-label='sun-emoji'> 🌞</span> I'm a frontend developer with a MSc in Sustainable Urban Planning and Design.
-      </BoxText>
+      </FirstBoxText>
       <BoxText>
         Building clean and intuitive functionalities is one of my goals as a web developer.
         I'm passionate about efficient and structured code <span role='img' aria-label='puzzle-piece-emoji'> 🧩</span>
@@ -15,7 +15,7 @@ export const IntroText = () => {
       <BoxText>
         Frontend and backend development both excite me, and I would love to work in a team where I can learn along with new challenges! <span role='img' aria-label='rocket-emoji'> 🚀</span>
       </BoxText>
-    </GreyPortfolioContainer>
+    </MovingPortfolioContainer>
   )
 }
 

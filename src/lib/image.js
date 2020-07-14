@@ -12,7 +12,7 @@ export const ProfileImage = styled.img`
   @media (min-width: 668px) and (max-width: 1023px) {
     width: 230px;
     height: 230px;
-    margin: 30px;
+    margin: 0px 30px;
   } 
   @media (min-width: 1024px) {
     position: relative;
@@ -33,11 +33,33 @@ export const FeatureImageWrap = styled.a`
   height: 400px;
   margin-top: 30px;
   margin-bottom: 10px;
-  margin-right: 5%;
-  margin-left: 5%;
-  @media (min-width: 1024px) {
-    width: 95%;
-    height: 300px;
+  background-image: url(${props => props.mobileUrl ? props.mobileUrl : require(`../images/IMG_0164.JPG`)});
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media (min-width: 767px) {
+    background-image: url(${props => props.desktopUrl ? props.desktopUrl : require(`../images/IMG_8053.JPG`)});
+    width: 100%;
+    height: 285px;
+  }
+`
+export const ThoughtImageWrap = styled.a`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  background-image: url(${props => props.mobileUrl ? props.mobileUrl : require(`../images/IMG_0164.JPG`)});
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media (min-width: 767px) {
+    background-image: url(${props => props.desktopUrl ? props.desktopUrl : require(`../images/IMG_8053.JPG`)});
+    width: 100%;
+    height: 340px;
   }
 `
 export const FeatureImg = styled.img`
@@ -53,13 +75,21 @@ export const FeatureImg = styled.img`
   }
 `
 
-export const FeatureImage = ({ href, alt, src }) => {
-  return (
-    <FeatureImageWrap href={href}>
-      <FeatureImg src={src} alt={alt} />
-    </FeatureImageWrap>
-  )
-}
+export const FeatureImage = ({ href, alt, mobileUrl, desktopUrl }) => (
+  <FeatureImageWrap href={href} alt={alt} mobileUrl={mobileUrl} desktopUrl={desktopUrl} />
+);
+export const ThoughtImage = ({ href, alt, mobileUrl, desktopUrl }) => (
+  <ThoughtImageWrap href={href} alt={alt} mobileUrl={mobileUrl} desktopUrl={desktopUrl} />
+);
+
+
+// export const FeatureImage = ({ href, alt, src }) => {
+//   return (
+//     <FeatureImageWrap href={href}>
+//       <FeatureImg src={src} alt={alt} />
+//     </FeatureImageWrap>
+//   )
+// }
 
 // background-image: url(${require(`../images/happyfeaturemobile.jpg`)});
 //   background-size: contain;

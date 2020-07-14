@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components/macro'
+import styled, { keyframes } from 'styled-components/macro'
 
 export const MainHeader = styled.header`
   display: flex;
@@ -88,7 +88,7 @@ export const WhitePortfolioContainer = styled.div`
   min-height: fit-content;
   width: 100%;
   background-color: #FFFFFF;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   @media (min-width: 1024px) {
     max-width: -webkit-fill-available;
     padding-right: 100px;
@@ -98,8 +98,9 @@ export const WhitePortfolioContainer = styled.div`
 `
 
 export const RedHeaderBox = styled.div`
-  background-color: #FA382F;
-  margin-top: 50px;
+  background-color: #ffa931;
+  margin-top: 3em;
+  margin-bottom: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,6 +116,15 @@ export const FeatureDesktopBigBox = styled.div`
     flex-direction: column;
   }
 `
+export const ThoughtsDesktopBigBox = styled.div`
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 100%;
+  }
+`
 export const FeatureContainer = styled.section`
   display: flex;
   flex-direction: column;
@@ -125,6 +135,18 @@ export const FeatureContainer = styled.section`
     flex-direction: row;
     align-items: baseline;
     width: 100%;
+  }
+`
+export const ThoughtsDesktopCard = styled.article`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 1024px) {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
   }
 `
 export const FeatureCard = styled.article`
@@ -143,8 +165,17 @@ export const FeatureTextContainer = styled.div`
   @media (min-width: 1024px) {
     display: flex;
     width: 95%;
-    flex-direction: row wrap;
     margin-top: 10px;
+}
+`
+export const ThoughtsTextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 5px 30px;
+  @media (min-width: 1024px) {
+    display: flex;
+    width: 95%;
+    margin-top: 30px;
 }
 `
 export const TagContainer = styled.div`
@@ -158,8 +189,8 @@ export const TagContainer = styled.div`
 }
 `
 export const TagBox = styled.div`
-  border: 1px solid #FDDFE7;
-  background-color: #FDDFE7;
+  border: 1px solid #ff847c;
+  background-color: #ff847c;
   margin-right: 4px;
   padding: 2px 8px;
   display: flex;
@@ -171,11 +202,106 @@ export const TagBox = styled.div`
     margin-right: 6px;
   }
 `
-
-
-
-
-
+export const MovingBackground = keyframes`
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+} 
+`
+export const MovingPortfolioContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: fit-content;
+  width: 100%;
+  background-size: 110% 110%;
+  background-image: linear-gradient(270deg, #ffaaa6, #dcedc2, #ffd3b5);
+  animation: ${MovingBackground} 5s ease infinite;
+  padding-bottom: 20px;
+  @media (min-width: 1024px) {
+    max-width: -webkit-fill-available;
+    padding: 2em 6.5em 6.5em 6.5em;
+  }
+`
+export const OtherFeatureBigBox = styled.div`
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+`
+export const OtherFeature = styled.article`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+export const HideDisplay = styled.div`
+  display: none;
+  @media (min-width: 1024px) {
+    display: flex;
+    width: 50%;
+  }
+`
+export const HideFeatureCard = styled.article`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
+`
+export const SkillsDesktopBigBox = styled.div`
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    width: 100%;
+    padding: 0em 2em;
+  }
+`
+export const SkillsContainer = styled.section`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+`
+export const SkillsList = styled.article`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: min-content;
+  margin: 0px 0.6em;
+  text-align: center;
+  @media (min-width: 1024px) {
+    margin: 0em 0.05em;
+  }
+`
+export const ColorIconContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-left: 2em;
+  @media (max-width: 668px) {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+`
+export const ColorIconCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em 0em 0em 0em;
+  @media (min-width: 1024px) {
+    margin: 1em 5em;
+  }
+`
 
 
 
