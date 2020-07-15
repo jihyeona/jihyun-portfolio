@@ -165,8 +165,8 @@ export const FeatureTextContainer = styled.div`
   padding: 0.5em 1em;
   @media (min-width: 1024px) {
     display: flex;
-    width: 95%;
-    margin-top: 10px;
+    width: 100%;
+    margin-top: 1em;
 }
 `
 export const ThoughtsTextContainer = styled.div`

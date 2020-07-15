@@ -41,10 +41,15 @@ export const FeatureImageWrap = styled.a`
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  @media (min-width: 767px) {
+  @media (min-width: 767px) and (max-width: 1279px) {
+    background-image: url(${props => props.desktopUrl ? props.desktopUrl : require(`../images/IMG_8053.JPG`)});
+    width: 95%;
+    height: 15em;
+  }
+  @media (min-width: 1280px) {
     background-image: url(${props => props.desktopUrl ? props.desktopUrl : require(`../images/IMG_8053.JPG`)});
     width: 100%;
-    height: 285px;
+    height: 18.3em;
   }
 `
 export const ThoughtImageWrap = styled.a`
@@ -60,7 +65,12 @@ export const ThoughtImageWrap = styled.a`
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  @media (min-width: 767px) {
+  @media (min-width: 767px) and (max-width: 1279px) {
+    background-image: url(${props => props.desktopUrl ? props.desktopUrl : require(`../images/IMG_8053.JPG`)});
+    width: 95%;
+    height: 340px;
+  }
+  @media (min-width: 1280px) {
     background-image: url(${props => props.desktopUrl ? props.desktopUrl : require(`../images/IMG_8053.JPG`)});
     width: 100%;
     height: 340px;
